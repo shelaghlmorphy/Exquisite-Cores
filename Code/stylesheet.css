@@ -1,0 +1,147 @@
+body {
+  font-family: 'Coda', cursive;
+  font-size: 16px;
+  color: white;
+  background-color: black;
+}
+
+p{
+  color:  black;
+  font-family: 'Coda', cursive;
+  font-size: 28px;
+  line-height: 38px;
+  padding: 200px;
+  padding-top: 300px;
+  padding-bottom:  300px;
+  text-align: center;
+}
+
+b{
+  font-weight: 400;
+}
+
+h1{
+  font-family: 'Coda', cursive;
+  color:  white;
+  font-style: bold;
+  font-weight: 400;
+  font-size: 200px;
+  margin-top: 125px;
+  margin-bottom: 225px;
+  text-align: center;
+}
+
+c1 {transition: color;}
+c1:hover {color: pink; font-weight: 600;}
+
+c2 {transition: color;}
+c2:hover {color: #85edea; font-weight: 600;}
+ 
+c3 {transition: color;}
+c3:hover {color: orange; font-weight: 600;}
+
+c4 {transition: color;}
+c4:hover {color: #a6e843; font-weight: 600;}
+
+
+fieldset {
+  line-height: 2;
+  border: none;
+}
+
+input[name="InMemory"] {
+  accent-color: pink;
+}
+
+input[name="InCore"] {
+  accent-color:#85edea;
+}
+
+input[name="InCache"] {
+  accent-color: orange;
+}
+
+input[name="InQueue"] {
+  accent-color: #a6e843;
+}
+
+.wrapper {
+  background-color: black;
+  scroll-snap-type: y mandatory;
+}
+
+.header {
+  scroll-snap-align: center;
+}
+
+.description {
+  
+  margin: 0;
+  padding: 0;
+  animation-name: backgroundColorPalette;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear; 
+  /* linear is enabled default, it’s not necessary to add it make it work but it can make your code more expressive */
+}
+
+@keyframes backgroundColorPalette {
+  0% {
+    background: pink;
+  }
+  33% {
+    background: orange;
+  }
+  66% {
+    background: #a6e843;
+  }
+  100% {
+    background: #85edea;
+  }
+  
+}
+
+.flex-great-grandparent {
+  display:  flex;
+  padding-top: 120px;
+  padding-bottom: 125px;
+  scroll-snap-align: center;
+}
+
+.flex-grandparent{
+  display: flex;
+  max-width: 50%;
+  flex-direction: column;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.flex-parent {
+  display: flex;
+  padding: 2px;
+}
+
+.flex-item {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  padding-right: 2px;
+  padding-left: 2px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.pink{color: pink;}
+.blue{color: #85edea;}
+.orange {color: orange;}
+.green {color: #a6e843;}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+img.center {
+  width: 100%;
+}
